@@ -1,6 +1,6 @@
 import Home from './page/Home';
-import Signup from './page/Signup';
-import Signin from './page/Signin';
+// import Signup from './page/Signup';
+// import Signin from './page/Signin';
 import { Navigate, BrowserRouter as Router } from 'react-router-dom';
 import { Routes, Route, } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material';
@@ -29,8 +29,8 @@ function App() {
         <ThemeProvider theme={theme}>
           <section>
             <Routes>
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/signin" element={<Signin />} />
+              {/* <Route path="/signup" element={<Signup />} />
+              <Route path="/signin" element={<Signin />} /> */}
               <Route path="/home" element={
                 <PrivateRoute><Home /></PrivateRoute>
               }
