@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from '../utils/firebase';
-import Navigation from '../components/Navigation';
-import { Route } from 'react-router-dom';
-import SearchCategories from './SearchCategories';
 
 const Home = () => {
 

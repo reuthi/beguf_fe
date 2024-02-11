@@ -1,4 +1,4 @@
-import { Box, Chip, Grid, Paper, TextField, Typography } from "@mui/material";
+import { Box, Grid, Paper, TextField, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 // import * as images from "../assets/png/categories";

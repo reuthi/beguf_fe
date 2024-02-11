@@ -1,5 +1,5 @@
 import { Box, Skeleton, Typography } from "@mui/material"
-import React, { Component } from 'react';
+import React from 'react';
 
 export const SearchItemText = (props: { item: any }) => {
 

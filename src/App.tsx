@@ -11,7 +11,7 @@ import { IRootState } from './store';
 import SearchCategories from './page/SearchCategories';
 import { SearchCategory } from './page/SearchCategory';
 import { SearchItem } from './page/SearchItem';
-import React, { Component } from 'react';
+import React from 'react';
 
 const PrivateRoute = ({ children }: { children: any }) => {
   const { user } = useSelector((state: IRootState) => state.auth)

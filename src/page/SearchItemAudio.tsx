@@ -1,26 +1,23 @@
-import { Button } from "@mui/base"
-import { Box, IconButton, LinearProgress, Paper, Skeleton, Typography } from "@mui/material"
-import React, { Component, useRef, useState } from 'react';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import PauseIcon from '@mui/icons-material/Pause';
+import { Box, Skeleton, Typography } from "@mui/material"
+import React, { useRef } from 'react';
 import { Item } from "../utils/types";
 
 export const SearchItemAudio = (props: { item: Item }) => {
-    const [isPlaying, setIsPlaying] = useState(false)
-    const [progress, setProgress] = React.useState(10);
+    // const [isPlaying, setIsPlaying] = useState(false)
+    // const [progress, setProgress] = React.useState(10);
 
     const myRef = useRef<any>();
 
-    // const audio = new Audio(props.item.link);
-    const play = () => {
-        // console.log(audio)
-        myRef.current.play();
-        setIsPlaying(true)
-    }
-    const pause = () => {
-        myRef.current.pause();
-        setIsPlaying(false)
-    }
+    // // const audio = new Audio(props.item.link);
+    // const play = () => {
+    //     // console.log(audio)
+    //     myRef.current.play();
+    //     setIsPlaying(true)
+    // }
+    // const pause = () => {
+    //     myRef.current.pause();
+    //     setIsPlaying(false)
+    // }
     return <>
         <Box sx={{
             p: 2,

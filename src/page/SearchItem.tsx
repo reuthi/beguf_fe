@@ -1,7 +1,5 @@
-import { Box, Button, Fab, IconButton, Paper } from "@mui/material"
-import { getDownloadURL, getStream, ref } from "firebase/storage"
-import { storage } from "../utils/firebase"
-import React, { Component, useEffect, useState } from 'react';
+import { Fab, IconButton } from "@mui/material"
+import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from "react-router-dom"
 import { Item, ItemType } from "../utils/types"
 import SearchItemText from "./SearchItemText"
@@ -29,7 +27,7 @@ export const SearchItem = () => {
         };
 
         fetchData();
-    }, []);
+    }, [id]);
 
     const renderByContentType = () => {
         switch (item?.type) {

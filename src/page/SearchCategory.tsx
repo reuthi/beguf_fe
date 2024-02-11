@@ -135,7 +135,7 @@ export const SearchCategory = () => {
                             }}>
                                 <Box sx={{
                                 }}>
-                                    <img src={require(`../assets/png/contentType/${item.type}.png`)} />
+                                    <img src={require(`../assets/png/contentType/${item.type}.png`)} alt={item.type} />
                                 </Box>
                             </Box>
                             <Box sx={{
