@@ -1,6 +1,7 @@
 export enum ItemType {
     AUDIO = "audio",
-    TEXT = "text"
+    TEXT = "text",
+    PRACTICE = "practice"
 }
 
 export interface Item {

@@ -97,7 +97,7 @@ export const SearchCategory = () => {
                 <Box sx={{
                     display: "flex",
                     justifyContent: "space-evenly",
-                    m: 4,
+                    m: 3,
                 }}>
                     {filters.map((filter, i) => (
                         <Button variant="text" onClick={() => setChosenFilter(i)}>
@@ -115,25 +115,44 @@ export const SearchCategory = () => {
                     {data.map((item, i) =>
                         <Card key={i} sx={{
                             align: "right",
-                            my: 4,
-                            p: 4,
+                            my: 2,
+                            p: 1.5,
                             display: "flex",
                             justifyContent: "space-between",
                             flexDirection: "row",
-                            alignItems: "center"
-                            // border: "1px solid black"
+                            alignItems: "center",
+                            borderRadius: "20px",
+                            backgroundColor: "rgba(233, 111, 125, 0.07)",
+                            boxShadow: "none"
                         }} onClick={() => navigate(`/search/item/${item._id}`)}>
-                            {/* <Box>placeholder</Box> */}
+                            <Box sx={{
+                                height: "86px",
+                                m: 1,
+                                background: "linear-gradient(to bottom right, #6BD39A, #C0A2E8, #E96F7D)",
+                                borderRadius: "6px",
+                                display: "flex",
+                                alignItems: "center"
+                            }}>
+                                <Box sx={{
+                                }}>
+                                    <img src={require(`../assets/png/contentType/${item.type}.png`)} />
+                                </Box>
+                            </Box>
                             <Box sx={{
                                 display: "flex",
                                 justifyContent: "flex-end",
                                 flexDirection: "column"
                             }}>
                                 <Box>
-                                    <Typography variant="h5" align="right">{item.headline}</Typography>
+                                    <Typography sx={{
+                                        fontSize: "14px",
+                                        fontWeight: "600"
+                                    }} align="right">{item.headline}</Typography>
                                 </Box>
                                 <Box>
-                                    <Typography variant="body2" align="right">{(item.subheadline || item.content)?.slice(0, 35) + "..."}</Typography>
+                                    <Typography sx={{
+                                        fontSize: "12px"
+                                    }} align="right">{(item.subheadline || item.content)?.slice(0, 35) + "..."}</Typography>
                                 </Box>
                                 <Box sx={{
                                     display: "flex",
