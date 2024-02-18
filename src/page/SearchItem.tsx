@@ -13,7 +13,7 @@ export const SearchItem = () => {
     // const item = data.find(d => d.id === id)
 
     useEffect(() => {
-        const url = `http://localhost:4000/item/${id}`;
+        const url = `https://guarded-tor-44964-09b363a73f15.herokuapp.com/item/${id}`;
 
         const fetchData = async () => {
             try {

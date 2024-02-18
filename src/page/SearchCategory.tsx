@@ -17,7 +17,7 @@ export const SearchCategory = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        const url = "http://localhost:4000/items";
+        const url = "https://guarded-tor-44964-09b363a73f15.herokuapp.com/items";
 
         const fetchData = async () => {
             try {
